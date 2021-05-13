@@ -50,8 +50,9 @@
         android:layout_marginRight="20dp"
         android:layout_marginBottom="33dp"
         android:background="@drawable/button_background"
+        android:text="검색"
+        app:backgroundTint="@color/purple_700"
         app:backgroundTintMode="add"
-        app:icon="@drawable/arrow"
         app:iconSize="55dp"
         app:iconTint="#03F4C4"
         app:layout_constraintBottom_toTopOf="@+id/map"
@@ -63,7 +64,6 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
         <Button
             android:id="@+id/button2"
@@ -84,7 +84,34 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/end"
             app:layout_constraintTop_toTopOf="parent" />
-
     </FrameLayout>
 
+    <TableLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#E8E8E2"
+        android:stretchColumns="*"
+        android:visibility="invisible">
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="출발"
+                app:backgroundTintMode="add"
+                app:iconTint="@color/design_default_color_background"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="도착"
+                app:backgroundTintMode="add"
+                app:iconTint="@color/design_default_color_background"></Button>
+        </TableRow>
+    </TableLayout>
 </FrameLayout>
